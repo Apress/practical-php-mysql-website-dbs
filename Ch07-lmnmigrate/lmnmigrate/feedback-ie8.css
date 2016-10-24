@@ -1,0 +1,14 @@
+body {margin:0; padding:0; }
+form {position:relative; margin-left:90px; margin-bottom:0; width:590px; }
+.cntr { text-align:center; }
+#rad { 	width:140px; position:absolute; left:210px; }
+.chk1 { margin-left:150px; }
+textarea { position:absolute; left:15px; margin-bottom:45px;}
+label, input { 	margin-bottom:3px; }
+#sb { position:absolute; top:770px; width:50px; margin-left:250px; margin-top:50px; }
+img { vertical-align: top; }
+h3 { width:590px; text-align:center; }
+.red { color:red; }
+#footer {
+	margin-top:190px;
+}

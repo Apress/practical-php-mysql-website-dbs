@@ -1,0 +1,19 @@
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; 
+}
+img {display:block; }
+header {width:920px; height:160px; padding:0; border:10px white solid;
+background: url(images/header3.jpg); background-repeat:no-repeat; margin:10px auto; 
+}
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 60px; width:480px; 
+}
+h2 {
+	position:relative; left:425px; top:50px;
+}
+#rosette { position:relative; left:750px; top:-25px; }
+/* set side menu block position and width*/
+nav { margin:20px 30px 0 -30px; width:135px; float:right; 
+}
+#header-button {
+	position:absolute; top:-25px; left:710px;
+}

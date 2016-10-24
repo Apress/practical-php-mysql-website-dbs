@@ -1,0 +1,31 @@
+﻿body {text-align:center; background-color:#CCFF99; color:green; font-family: "times new roman"; 
+font-size: 100%; margin: auto; }
+h2 { font-size:150%; margin-bottom:0; color:#003300;  text-align:center; }
+h3 { font-size:110%; color:#003300; text-align:center; }
+#container {position:relative; min-width:960px; max-width:1200px; margin:auto; text-align:left;	}
+#header, #header-members, #header-admin { position:relative; margin:10px auto 0 auto; min-width:960px; max-width:1200px; height:183px; background-image: url('images/header3.jpg'); 
+background-repeat: no-repeat; padding:0; color:white; }
+h1 {position:relative; top:50px; font-size:350%; color:white; margin:auto 0 auto 20px; 	width: 700px; }
+ul { position:absolute; top:388px; right:-265px; 
+color:navy; width:135px; text-align:center; margin:0; 	height: 22px; }
+#nav ul { position:absolute; top:190px; left:-40px; color:navy; width:135px; text-align:center; margin:0; }
+#info-col { position:absolute; top:190px; right:10px; color:navy; width:135px; text-align:center; margin:5px 5px 0 0; }
+#reg-navigation ul { position:absolute; top:30px; right:-20px; font-size:medium; width:160px; }
+#midcol { 	margin-left:150px; margin-right:150px; }
+#mid-left-col{ 	float:left; width:46%; text-align:left; }
+#mid-right-col{ float:right; width:46%; text-align:left; }
+p.dark {font-size:120%; color:black; }
+#mid-right-col h3 { text-align:left; font-size:130%; color:#003300; margin-bottom:0; }
+#footer { text-align:center; }
+.clear { clear:both; }
+/* set general side button styles */
+li { width:115px; list-style-type :none; margin-bottom: 3px; text-align: center; }
+/* set general anchor styles */
+li a { display: block; width:115px; color: white; font-weight: bold; text-decoration: none; }
+/* specify state styles. */
+/* mouseout (default) */
+li a { background: #559a55; border: 4px outset #559a55; }
+/* mouseover */
+li a:hover { display:block; background: red;  color:white; border: 5px outset red; width:115px; }
+/* onmousedown */
+li a:active { background:maroon;  border: 5px inset maroon; } 

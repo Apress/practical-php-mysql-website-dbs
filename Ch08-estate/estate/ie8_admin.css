@@ -1,0 +1,18 @@
+/*add display attributes for the semantic tags*/
+header, footer, section, article, nav { display:block; }
+header {width:920px; height:160px; padding:0; border:10px white solid;
+background: url(images/header3.jpg); background-repeat:no-repeat; margin:10px auto; }
+h1 { font-size:300%; color :white; position: relative; left:90px; top: 55px; width:480px; }
+h2 { position:relative; left:425px; top:35px; }
+#rosette { position:relative; left:750px; top:-38px; }
+/* set side menu block position and width*/
+nav { margin:20px 30px 0 -50px; width:135px; float:right; }
+#header-button { position:absolute; top:-20px; left:710px; }
+#content h2 {margin-left:-60px; margin-top:-25px; padding-bottom:25px; }
+form { margin-left:270px; }
+select { width:130px; float:left; text-align:right; clear:left;	}
+label { width:40px; float:left;  }
+input { float:left; margin-left:5px; }
+#submit { width:55px; margin-left:-205px; margin-top:30px; }
+#submit-no { position:relative; width:40px; left:160px; top:10px;}
+#submit-yes { position:relative; width:40px;   left:140px; top:10px;}

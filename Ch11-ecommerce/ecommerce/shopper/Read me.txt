@@ -1,0 +1,62 @@
+THE PAYPAL VERSION OF THE E-COMMERCE WEB SITE
+The files in this folder will enable you to view the code and test some of the pages.
+
+1. Copy the shopper folder into your htdocs folder.
+
+2. In phpMyAdmin create a database named shopperdb with the new user and password as follows:.
+USER: colossus  HOST: localhost PASSWORD: firstcomputer  DATABASE: shopperdb
+The listing for the database connection file included in the downloads is as follows:
+
+<?php 
+// Create a connection to the shopperdb database
+DEFINE ('DB_USER', 'colossus');
+DEFINE ('DB_PASSWORD', 'firstcomputer');
+DEFINE ('DB_HOST', 'localhost');
+DEFINE ('DB_NAME', 'shopperdb');
+// Make the connection:
+$dbcon = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) 
+OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+// Set the encoding
+mysqli_set_charset($dbc, 'utf8');
+?>
+
+3. Use phpMyAdmin to import the downloadable .sql files to create the already populated tables 
+When you have complete steps 1 to 3, you can begin to explore the PayPal shopping cart web site.
+
+To access the web site type http://localhost/shopper/  into the adress field of a browser.
+
+The home page (index.php) is the search page, and because it is not hard coded, you will be able to search for any categerory of painting in the pull down lists.
+You will need to be online to see the PayPal buttons. 
+Don't click the PayPal buttons because they contain dummy information, PayPal will respond with an error message.
+
+Because the pages use dummy information, the PayPal shopping cart will not be actioned.
+
+If the PayPal buttons were not dummies PayPal would process the orders and notify the account holder. 
+PayPal could also be configured to manage inventory control.
+
+No login or registration is required for the normal user, but the administrator must log in. 
+A registration form is include so that he can set up his login credentials.
+No login button is provided for the administrator for extra security. 
+Only the adminisrator knows the URL of the login page.
+You can act as administrator by entering the following URL into the address field of a browser:
+localhost/shopper/login.php 
+
+His name is Dan Druff and his login details are as follows: 
+E-MAIL ADDRESS: ddruff@myisp.co.uk PASSWORD: epidermal
+His user level is set as 51.
+
+Log in as administrator and try adding an new abstract painting. 
+On the "Add an artist" interface, click the header menu button "Add Painting" then fill out the form as follows:
+In the image field enter this:
+"images/k-abstract-thumb.jpg"
+Select Abstract and enter a price of 800, do not enter a currency symbol such as £ or $.
+Select Oil Painting
+Select James Kessell .
+Then, in the textarea for the PayPal code, copy and paste this PayPal code: 
+
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" value="_s-xclick" type="hidden"> <input name="hosted_button_id" value="5159065" type="hidden"> <p> <input src="https://www.paypal.com/en_GB/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online." style="float: left;" border="0" type="image"> <img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" border="0" height="1" width="1"></p> </form>   
+
+Menu buttons for Registration and Login are not currently displayed on the public pages, but you can add these if you wish.
+A registration page for other users is included in the folder in case you would like to add this feature to the web site. 
+Registered users could then be notified about gallery events and special offers by email or by viewing a special buyers' page. . 
+ 
